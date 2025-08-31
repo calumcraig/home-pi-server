@@ -1,0 +1,6 @@
+# Docker volumes and runtime data
+postgres/data/
+nextcloud/data/
+organize/cron.log
+qbittorrent/config/
+qbittorrent/downloads/
