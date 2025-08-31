@@ -63,7 +63,7 @@ The Organize container automatically moves media from the downloads folder to yo
 # Run Organize daily at 8 PM
 0 20 * * * cd ~/docker && /usr/bin/docker compose run --rm organize >> ~/docker/organize/cron.log 2>&1
 ```
-PostgreSQL Notes
+## PostgreSQL Notes
 The PostgreSQL container uses a dedicated persistent volume (data/postgres).
 
 Ensure proper file ownership: the directory must be owned by the postgres user to avoid initialization errors.
@@ -98,7 +98,7 @@ Copy code
 docker compose ps
 Verify that logs for Organize, PostgreSQL, and other services show no errors.
 
-Future Improvements
+## Future Improvements
 Optional: email notifications for failed Organize runs.
 
 Optional: additional automated scripts for backups.
