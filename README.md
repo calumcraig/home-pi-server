@@ -61,7 +61,8 @@ The Organize container automatically moves media from the downloads folder to yo
 
 ```cron
 # Run Organize daily at 8 PM
-0 20 * * * cd ~/docker && /usr/bin/docker compose run --rm organize >> ~/docker/organize/cron.log 2>&1```
+0 20 * * * cd ~/docker && /usr/bin/docker compose run --rm organize >> ~/docker/organize/cron.log 2>&1
+```
 PostgreSQL Notes
 The PostgreSQL container uses a dedicated persistent volume (data/postgres).
 
